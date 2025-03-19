@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import _ from 'lodash';
 import { CSSProperties } from 'react';
 import { getDeviceType } from '@/lib/utils';
@@ -81,7 +82,7 @@ const FaqV2 = ({ data, style }: FaqV2Props) => {
   };
 
   return (
-    <div className="flex w-full flex items-center justify-center">
+    <div className="flex w-full items-center justify-center">
       <div className="flex flex-col w-full max-w-[960px] px-4 lg:px-0">
         <div className="flex flex-col gap-6 items-center">
           <h2 className="text-base lg:text-[42px] heading-1 text-center flex items-center gap-2 tracking-[-1.4px]">
