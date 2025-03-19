@@ -32,7 +32,7 @@ const RenderUIClient = (props: any) => {
 
   useEffect(() => {
     setData(layout);
-  }, [layout]);
+  }, []);
 
   // const layout = data;
   const [deviceType, setDeviceType] = useState<DeviceType>(getDeviceType());
