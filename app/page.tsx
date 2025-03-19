@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-
+import { redirect } from 'next/navigation';
 import ClientWrapper from '@/components/grid-systems/ClientWrapGridSystem';
 import Head from 'next/head';
 import _ from 'lodash';
@@ -11,6 +11,7 @@ export const revalidate = 0;
 const pageName = 'home';
 
 export default async function Home() {
+  redirect('/support');
   const layoutId = pageName;
   const metadata = await fetchMetadata(pageName);
   const formMetadata = _.get(metadata, 'data.form');
