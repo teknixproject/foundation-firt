@@ -13,6 +13,64 @@ interface FaqV2Props {
   style?: CSSProperties;
 }
 
+const faqCollape = [
+  {
+    question: "1. What is TON Booking Shareholders?",
+    answer:
+      "TON Booking Shareholders is an investment platform that allows users to earn daily rewards by investing in the ecosystem using cryptocurrencies like USDT, TBK, and WAB. The platform also offers referral bonuses for growing your community.",
+  },
+  {
+    question: "2. How do I start investing?",
+    answer: `Step-by-step Guide:<br>
+      - Choose an investment package from the available options (100 TON, 500 - TON, 1000 TON, or custom).<br>
+      - Connect your wallet.<br>
+      - Select your preferred payment method (USDT, TBK, WAB) and confirm the transaction.`,
+  },
+  {
+    question: "3. How can I invest in TON Booking Shareholders?",
+    answer:
+      "Visit the How to Invest section for detailed steps on connecting your wallet and selecting an investment package.",
+  },
+  {
+    question: "4. What are daily rewards?",
+    answer:
+      "Daily rewards are calculated based on the total amount you have invested in TON Booking Shareholders. The more you invest, the higher your daily rewards. You can track your rewards and see your earnings grow in the Activity section.",
+  },
+  {
+    question: "5. How are referral rewards calculated?",
+    answer: `Referral rewards are calculated through two bonus structures:<br>
+      - Direct Bonus: 10% of the investment made by someone you referred.<br>
+      - Indirect Bonus: 5% of the investment made by a partner of your referred person.`,
+  },
+  {
+    question: "6. How do I connect my wallet?",
+    answer: `Step 1: Click on Settings.<br>
+      Step 2: Click "Connect Wallet" to link your wallet.<br>
+      Step 3: Click on the Tonkeeper Wallet icon and approve the connection.<br>
+      Step 4: The system displays a pop-up notification confirming successful connection.`,
+  },
+  {
+    question: "7. What payment methods are supported?",
+    answer:
+      "You can invest using USDT, TBK, and WAB. All payments are secured by blockchain technology.",
+  },
+  {
+    question: "8. Is my payment secure?",
+    answer:
+      "Yes, all transactions are secured by the TON Blockchain, ensuring transparency and security for your investments.",
+  },
+  {
+    question: "9. What should I do if my payment fails?",
+    answer:
+      "- Double-check the payment details and ensure your wallet has sufficient funds.<br> - If the issue persists, contact our support team for further assistance.",
+  },
+  {
+    question: "10. How can I view my payment history?",
+    answer:
+      "Visit the Activities section in the bot to review your past transactions and track your investments.",
+  },
+];
+
 const FaqV2 = ({ data, style }: FaqV2Props) => {
   const sizeScreen = getDeviceType();
   const isMobile = sizeScreen === "mobile";
