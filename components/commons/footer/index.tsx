@@ -43,7 +43,7 @@ function Footer() {
           <div className="flex flex-col gap-2 items-start">
             <p className="text-base font-medium leading-[150%] text-typo1">Contact Us</p>
             <p className="text-base font-semibold leading-[150%] text-typo1">
-              contact@lalala.teknixcorp
+              contact@nvbplay.teknixcorp
             </p>
           </div>
           <div className="w-[800px] max-lg:w-full px-8 max-lg:px-0 border-x border-[#E7E5E4] max-lg:border-0 flex flex-col items-center justify-center gap-16">
