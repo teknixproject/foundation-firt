@@ -1,6 +1,12 @@
 import _ from "lodash";
 import { CSSProperties } from "react";
 import { getDeviceType } from "@/lib/utils";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface FaqV2Props {
   data?: any;
