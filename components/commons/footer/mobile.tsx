@@ -59,7 +59,7 @@ function FooterMobile() {
               </div>
               <div className="h-5 justify-between items-start flex flex-col">
                 <div className="text-stone-950 text-[13px] font-semibold font-['Poppins'] leading-tight">
-                  contact@tbk.foundation
+                  contact@lalala.teknixcorp
                 </div>
                 <div className="text-center text-black text-[13px] font-normal font-['Poppins'] underline leading-tight">
                   Privacy Policy
