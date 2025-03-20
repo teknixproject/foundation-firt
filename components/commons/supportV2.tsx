@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
-import axios from "axios";
+import axios from 'axios';
 
 const options = [
   {
-    label: "Delete",
-    value: "delete",
+    label: 'Delete',
+    value: 'delete',
   },
 ];
 
-import _ from "lodash";
-import React, { useState } from "react";
-import { toast } from "react-toastify";
+import _ from 'lodash';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const SupportV2Common = () => {
-  const [state, setState] = useState("delete");
+  const [state, setState] = useState('delete');
   const [form, setForm] = useState({
-    user_name: "",
-    reason: "",
+    user_name: '',
+    reason: '',
     loading: false,
   });
-  const isDelete = state === "delete";
+  const isDelete = state === 'delete';
 
   const onSubmit = async () => {
     setForm((prev) => ({ ...prev, loading: true }));
@@ -33,10 +33,10 @@ const SupportV2Common = () => {
         }
       );
       if (res.status === 200) {
-        toast.success("Submit successfully!");
+        toast.success('Submit successfully!');
       }
     } catch (error: any) {
-      toast.error(`Submit failed!. ${_.get(error, "response.data.message")}`);
+      toast.error(`Submit failed!. ${_.get(error, 'response.data.message')}`);
     }
     setForm((prev) => ({ ...prev, loading: false }));
   };
@@ -48,7 +48,7 @@ const SupportV2Common = () => {
   return (
     <div className="h-[100vh] pt-[160px] w-full flex flex-col items-center ">
       <div className="text-center text-white text-base lg:text-5xl font-semibold font-['Poppins'] capitalize leading-[67.20px] mb-[32px]">
-        Support
+        HỖ TRỢ
       </div>
 
       <div className="max-w-[600px] w-full px-4 lg:px-0 flex flex-col justify-start items-center gap-[24px]">
@@ -73,17 +73,17 @@ const SupportV2Common = () => {
               <input
                 className="text-[13px] lg:text-[16px] w-full h-11 lg:h-14 px-[10px] lg:py-3 lg:py-4 bg-[#222222] rounded-[100px] border border-[#6d6d6d] justify-start items-center gap-2.5 inline-flex overflow-hidden"
                 type="email"
-                onChange={onChange("email")}
+                onChange={onChange('email')}
               />
             </div>
             <div className="w-full flex-col flex gap-3">
               <div className="justify-start items-center gap-2.5 inline-flex">
                 <div className="text-white text-[13px] lg:text-[16px] font-semibold font-['Poppins'] leading-normal">
-                  Username
+                  Tên người dùng
                 </div>
               </div>
               <input
-                onChange={onChange("user_name")}
+                onChange={onChange('user_name')}
                 className="text-[13px] lg:text-[16px] w-full h-11 lg:h-14 px-[10px] lg:px-6 py-3 lg:py-4 bg-[#222222] rounded-[100px] border border-[#6d6d6d] justify-start items-center gap-2.5 inline-flex overflow-hidden"
                 type="text"
               />
@@ -91,11 +91,11 @@ const SupportV2Common = () => {
             <div className="w-full flex-col flex gap-3">
               <div className="justify-start items-center gap-2.5 inline-flex">
                 <div className="text-white text-[13px] lg:text-[16px] font-semibold font-['Poppins'] leading-normal">
-                  Reason
+                  Lý do
                 </div>
               </div>
               <textarea
-                onChange={onChange("reason")}
+                onChange={onChange('reason')}
                 className="text-[13px] lg:text-[16px] w-full h-11 lg:h-14 px-[10px] lg:px-6 py-3 lg:py-4 bg-[#222222] rounded-[100px] border border-[#6d6d6d] justify-start items-center gap-2.5 inline-flex overflow-hidden"
               />
             </div>
@@ -110,7 +110,7 @@ const SupportV2Common = () => {
               onClick={() => onSubmit()}
               className="text-center text-black text-base font-medium font-['Poppins'] leading-relaxed"
             >
-              {form.loading ? <LoadingTailwind /> : "Submit"}
+              {form.loading ? <LoadingTailwind /> : 'Gửi yêu cầu'}
             </div>
           </button>
         </div>
@@ -138,7 +138,7 @@ const LoadingTailwind = () => {
           fill="currentFill"
         />
       </svg>
-      <span className="sr-only">Loading...</span>
+      <span className="sr-only">Đang tải...</span>
     </div>
   );
 };
