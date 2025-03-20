@@ -16,59 +16,58 @@ interface FaqV2Props {
 
 const faqCollape = [
   {
-    question: '1. What is TON Booking Shareholders?',
+    question: '1. What is ChainCap Market?',
     answer:
-      'TON Booking Shareholders is an investment platform that allows users to earn daily rewards by investing in the ecosystem using cryptocurrencies like USDT, TBK, and WAB. The platform also offers referral bonuses for growing your community.',
+      'ChainCap Market is a cryptocurrency tracking app that provides real-time prices, market capitalization, trading volumes, and insights for thousands of cryptocurrencies. It’s designed to help users stay informed and manage their crypto portfolios.',
   },
   {
-    question: '2. How do I start investing?',
-    answer: `Step-by-step Guide:<br>
-      - Choose an investment package from the available options (100 TON, 500 - TON, 1000 TON, or custom).<br>
-      - Connect your wallet.<br>
-      - Select your preferred payment method (USDT, TBK, WAB) and confirm the transaction.`,
+    question: '2. How do I get started with ChainCap Market?',
+    answer: `Step-by-Step Guide:<br>
+      - Download ChainCap Market from the App Store or Google Play.<br>
+      - Open the app and sign up with your email or log in using Google/Apple accounts.<br>
+      - Start exploring crypto prices or setting up your portfolio.`,
   },
   {
-    question: '3. How can I invest in TON Booking Shareholders?',
+    question: '3. How can I track cryptocurrency prices?',
     answer:
-      'Visit the How to Invest section for detailed steps on connecting your wallet and selecting an investment package.',
+      'On the home screen, you’ll see a live list of cryptocurrencies ranked by market cap. Tap any coin to view detailed info like price charts, 24-hour volume, and circulating supply.',
   },
   {
-    question: '4. What are daily rewards?',
+    question: '4. What features does ChainCap Market offer?',
+    answer: `ChainCap Market lets you:<br>
+        - Track prices and market data for over 10,000 cryptocurrencies.<br>
+        - Create a personalized watchlist and portfolio.<br>
+        - Stay updated with the latest crypto news and market trends.<br>
+        - Compare exchange rankings based on trading volume.
+      `,
+  },
+  {
+    question: '5. How do I add coins to my portfolio?',
+    answer: `Step-by-Step:<br>
+        - Step 1: Go to the "Portfolio" tab.<br>
+        - Step 2: Tap "Add Transaction.<br>
+        - Step 3: Select a cryptocurrency, enter the amount you own, purchase price, and date.<br>
+        - Step 4: Save it, and your portfolio will update with real-time values.`,
+  },
+  {
+    question: '6. What currencies are supported for price display?',
+    answer: `ChainCap Market supports multiple fiat currencies like USD, EUR, VND, and more, plus crypto-to-crypto conversions (e.g., BTC to ETH). Adjust your preferred currency in "Settings.`,
+  },
+  {
+    question: '7. Is my data secure?',
     answer:
-      'Daily rewards are calculated based on the total amount you have invested in TON Booking Shareholders. The more you invest, the higher your daily rewards. You can track your rewards and see your earnings grow in the Activity section.',
+      'Yes, we use advanced encryption to protect your personal and portfolio data. ChainCap Market does not store your funds—only the data you input.',
   },
   {
-    question: '5. How are referral rewards calculated?',
-    answer: `Referral rewards are calculated through two bonus structures:<br>
-      - Direct Bonus: 10% of the investment made by someone you referred.<br>
-      - Indirect Bonus: 5% of the investment made by a partner of your referred person.`,
+    question: '8. What should I do if the app fails to update prices?',
+    answer: `- Check your internet connection.<br>
+    - Go to "Settings" and tap "Refresh Data".<br>
+    - If the issue persists, email us at <strong style={{ fontWeight: '400', color: '#F87171' }}>support@chaincapmarket.com</strong> for assistance.`,
   },
   {
-    question: '6. How do I connect my wallet?',
-    answer: `Step 1: Click on Settings.<br>
-      Step 2: Click "Connect Wallet" to link your wallet.<br>
-      Step 3: Click on the Tonkeeper Wallet icon and approve the connection.<br>
-      Step 4: The system displays a pop-up notification confirming successful connection.`,
-  },
-  {
-    question: '7. What payment methods are supported?',
+    question: '9. How can I view my watchlist?',
     answer:
-      'You can invest using USDT, TBK, and WAB. All payments are secured by blockchain technology.',
-  },
-  {
-    question: '8. Is my payment secure?',
-    answer:
-      'Yes, all transactions are secured by the TON Blockchain, ensuring transparency and security for your investments.',
-  },
-  {
-    question: '9. What should I do if my payment fails?',
-    answer:
-      '- Double-check the payment details and ensure your wallet has sufficient funds.<br> - If the issue persists, contact our support team for further assistance.',
-  },
-  {
-    question: '10. How can I view my payment history?',
-    answer:
-      'Visit the Activities section in the bot to review your past transactions and track your investments.',
+      '- Go to the "Watchlist" tab to see all the coins you’ve starred. Tap any coin for quick access to its price and stats.',
   },
 ];
 
@@ -84,10 +83,11 @@ const FaqV2 = ({ data, style }: FaqV2Props) => {
   return (
     <div className=" h-[100vh] flex w-full items-center justify-center">
       <div className="flex flex-col w-full max-w-[960px] px-4 lg:px-0">
-        <div className="flex flex-col gap-6 items-center">
+        <div className="flex flex-col gap-2 2xl:gap-6 items-center">
           <h2 className="text-base lg:text-[42px] heading-1 text-center flex items-center gap-2 tracking-[-1.4px]">
-            {isMobile ? 'FAQ' : 'Frequently Asked Questions'}
+            {isMobile ? 'FAQ' : 'Help & FAQs - ChainCap Market'}
           </h2>
+          <h4 className="text-base lg:text-[24px]">Need assistance or have questions?</h4>
         </div>
         <div className="w-full">
           <Accordion
@@ -96,23 +96,30 @@ const FaqV2 = ({ data, style }: FaqV2Props) => {
             className="w-full py-[36px] max-lg:py-[16px] flex flex-col gap-3 max-lg:gap-[24px]"
             defaultValue="0"
           >
-            {faqCollape.map((item, index) => (
-              <AccordionItem
-                value={index.toString()}
-                key={`faq-${index}`}
-                className="bg-white/[0.08] rounded-md lg:rounded-3xl "
-              >
-                <AccordionTrigger className="px-[42px] max-lg:px-[16px]">
-                  <p className="text-heading3 max-lg:text-[12px]">{item.question}</p>
-                </AccordionTrigger>
-                <AccordionContent className="px-[42px] pb-6 max-lg:pb-[12px] max-lg:px-[12px]">
-                  <div
-                    dangerouslySetInnerHTML={{ __html: item.answer }}
-                    className="text-paragraph1 text-left text-description5 max-lg:text-[13px]"
-                  ></div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {faqCollape.map((item, index) => {
+              const updatedAnswer = item.answer.replace(
+                /support@chaincapmarket.com/g,
+                `<span style="font-weight: 400; color: #eb2a2a;">support@chaincapmarket.com</span>`
+              );
+
+              return (
+                <AccordionItem
+                  value={index.toString()}
+                  key={`faq-${index}`}
+                  className="bg-white/[0.08] rounded-md lg:rounded-3xl "
+                >
+                  <AccordionTrigger className="px-[42px] max-lg:px-[16px]">
+                    <p className="text-heading3 max-lg:text-[12px]">{item.question}</p>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-[42px] pb-6 max-lg:pb-[12px] max-lg:px-[12px]">
+                    <div
+                      dangerouslySetInnerHTML={{ __html: updatedAnswer }}
+                      className="text-paragraph1 text-left text-description5 max-lg:text-[13px]"
+                    ></div>
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
         </div>
       </div>
