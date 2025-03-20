@@ -107,7 +107,7 @@ function Header() {
               color: !isMobile ? '#000' : '',
             }}
           >
-            Join for FREE
+            Tham gia miễn phí
           </button>
         </div>
       </Container>

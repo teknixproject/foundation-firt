@@ -41,16 +41,18 @@ function Footer() {
       <Container className="main:!px-[70px] py-16">
         <div className="w-full flex items-center justify-between max-lg:flex-col max-lg:gap-y-10">
           <div className="flex flex-col gap-2 items-start">
-            <p className="text-base font-medium leading-[150%] text-typo1">Contact Us</p>
+            <p className="text-base font-medium leading-[150%] text-typo1">Liên hệ</p>
             <p className="text-base font-semibold leading-[150%] text-typo1">
               contact@lalala.teknixcorp
             </p>
           </div>
           <div className="w-[800px] max-lg:w-full px-8 max-lg:px-0 border-x border-[#E7E5E4] max-lg:border-0 flex flex-col items-center justify-center gap-16">
             <div className="flex flex-col gap-2 max-lg:items-center">
-              <h3 className="text-heading2_2 font-medium text-typo1">Let’s Get In Touch!</h3>
+              <h3 className="text-heading2_2 font-medium text-typo1">
+                Hãy để lại địa chỉ liên lạc!
+              </h3>
               <p className="text-base leading-[150%] text-description6D max-lg:text-center">
-                {`What' s inside? Exclusive sales, new arrivals & much more.`}
+                Có gì bên trong? Ưu đãi độc quyền, sản phẩm mới và nhiều hơn nữa.
               </p>
             </div>
             <div className="w-[450px] border border-[#E7E5E4] max-lg:border-0 rounded-full pl-6 py-4 relative max-lg:w-full">
@@ -58,12 +60,12 @@ function Footer() {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email Address"
+                placeholder="Địa chỉ Email"
                 className="text-base leading-[150%] text-descriptionB1 outline-none w-1/2 bg-transparent"
               />
               <div className="absolute top-1/2 -translate-y-1/2 right-0">
                 <button className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
-                  <span className="z-10 pr-8 group-hover:text-black">Sign Up</span>
+                  <span className="z-10 pr-8 group-hover:text-black">Đăng Ký</span>
                   <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-white transition-[width] group-hover:w-[calc(100%-8px)]">
                     <div className="mr-3.5 flex items-center justify-center">
                       <svg
@@ -87,7 +89,7 @@ function Footer() {
             </div>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <p className="text-base font-medium leading-[150%] text-typo1">Social Media</p>
+            <p className="text-base font-medium leading-[150%] text-typo1">Mạng xã hội</p>
             <div className="flex items-center gap-6">
               {socials.map((social) => (
                 <Link href={social.href} key={social.title}>
@@ -111,7 +113,7 @@ function Footer() {
                 fontWeight: 400,
               }}
             >
-              Terms & Conditions
+              Điều khoản & Điều kiện
             </Link>
             <Link
               href={process.env.NEXT_PUBLIC_LINK_PRIVARY_POLICY || ''}
@@ -121,7 +123,7 @@ function Footer() {
               }}
               target="_blank"
             >
-              Privacy Policy
+              Chính sách bảo mật
             </Link>
           </div>
         </div>

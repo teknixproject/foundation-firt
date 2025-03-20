@@ -16,58 +16,57 @@ interface FaqV2Props {
 
 const faqCollape = [
   {
-    question: '1. What is ChainCap Market?',
+    question: '1. Lalala Cafe là gì?',
     answer:
-      'ChainCap Market is a cryptocurrency tracking app that provides real-time prices, market capitalization, trading volumes, and insights for thousands of cryptocurrencies. It’s designed to help users stay informed and manage their crypto portfolios.',
+      'Lalala Cafe là ứng dụng giúp bạn đặt món ăn và đồ uống dễ dàng ngay từ điện thoại. Chỉ cần quét mã QR, xem thực đơn, đặt hàng và thanh toán – tất cả trong vài thao tác, không cần xếp hàng hay gọi nhân viên.',
   },
   {
-    question: '2. How do I get started with ChainCap Market?',
-    answer: `Step-by-Step Guide:<br>
-      - Download ChainCap Market from the App Store or Google Play.<br>
-      - Open the app and sign up with your email or log in using Google/Apple accounts.<br>
-      - Start exploring crypto prices or setting up your portfolio.`,
+    question: '2. Làm sao để bắt đầu dùng Lalala Cafe?',
+    answer: `Hướng dẫn từng bước:<br>
+              - Tải ứng dụng Lalala Cafe từ App Store hoặc CH Play.
+              - Mở app, đăng ký bằng số điện thoại hoặc email.
+              - Quét mã QR tại bàn khi đến quán hoặc chọn giao hàng nếu muốn nhận tại nhà.
+            `,
   },
   {
-    question: '3. How can I track cryptocurrency prices?',
+    question: '3. Làm sao để xem thực đơn và đặt hàng?',
     answer:
-      'On the home screen, you’ll see a live list of cryptocurrencies ranked by market cap. Tap any coin to view detailed info like price charts, 24-hour volume, and circulating supply.',
+      'Quét mã QR tại bàn để mở thực đơn. Xem danh sách món ăn, đồ uống kèm mô tả và giá, rồi nhấn "Thêm vào giỏ hàng". Sau đó, xác nhận đơn hàng trong mục "Giỏ hàng".',
   },
   {
-    question: '4. What features does ChainCap Market offer?',
-    answer: `ChainCap Market lets you:<br>
-        - Track prices and market data for over 10,000 cryptocurrencies.<br>
-        - Create a personalized watchlist and portfolio.<br>
-        - Stay updated with the latest crypto news and market trends.<br>
-        - Compare exchange rankings based on trading volume.
+    question: '4. Lalala Cafe có những tính năng gì?',
+    answer: `Lalala Cafe mang đến:<br>
+              - Quét mã QR để truy cập thực đơn ngay lập tức.<br>
+              - Xem chi tiết các món ăn và đồ uống yêu thích.<br>
+              - Đặt hàng trực tiếp từ điện thoại mà không cần đợi.<br>
+              - Thanh toán nhanh chóng và an toàn.<br>
+              - Cập nhật trạng thái đơn hàng theo thời gian thực.
       `,
   },
   {
-    question: '5. How do I add coins to my portfolio?',
-    answer: `Step-by-Step:<br>
-        - Step 1: Go to the "Portfolio" tab.<br>
-        - Step 2: Tap "Add Transaction.<br>
-        - Step 3: Select a cryptocurrency, enter the amount you own, purchase price, and date.<br>
-        - Step 4: Save it, and your portfolio will update with real-time values.`,
+    question: '5. Làm sao để thanh toán đơn hàng?',
+    answer: `Sau khi đặt món, vào mục "Thanh toán" trong app. Chọn phương thức như thẻ tín dụng, ví điện tử (Momo, ZaloPay), hoặc tiền mặt (nếu có). Xác nhận để hoàn tất.`,
   },
   {
-    question: '6. What currencies are supported for price display?',
-    answer: `ChainCap Market supports multiple fiat currencies like USD, EUR, VND, and more, plus crypto-to-crypto conversions (e.g., BTC to ETH). Adjust your preferred currency in "Settings.`,
+    question: '6. Phải làm gì nếu không quét được mã QR?',
+    answer: `- Đảm bảo camera điện thoại hoạt động tốt và có đủ ánh sáng.<br>
+            - Kiểm tra kết nối internet của bạn.<br>
+            - Nếu vẫn không được, báo nhân viên quán hoặc liên hệ hỗ trợ qua email support@lalalacafe.vn.
+            `,
   },
   {
-    question: '7. Is my data secure?',
+    question: '7. Dữ liệu của tôi có an toàn không?',
     answer:
-      'Yes, we use advanced encryption to protect your personal and portfolio data. ChainCap Market does not store your funds—only the data you input.',
+      'Có, Lalala Cafe dùng công nghệ mã hóa để bảo vệ thông tin cá nhân và giao dịch của bạn, đảm bảo an toàn tuyệt đối.',
   },
   {
-    question: '8. What should I do if the app fails to update prices?',
-    answer: `- Check your internet connection.<br>
-    - Go to "Settings" and tap "Refresh Data".<br>
-    - If the issue persists, email us at <strong style={{ fontWeight: '400', color: '#F87171' }}>support@chaincapmarket.com</strong> for assistance.`,
+    question: '8. Làm sao để theo dõi trạng thái đơn hàng?',
+    answer: `Vào mục "Đơn hàng" trong app để xem cập nhật thời gian thực, từ lúc đặt món đến khi món được mang ra bàn hoặc giao đến bạn.`,
   },
   {
-    question: '9. How can I view my watchlist?',
+    question: '9. Tôi có thể đặt giao hàng qua Lalala Cafe không?',
     answer:
-      '- Go to the "Watchlist" tab to see all the coins you’ve starred. Tap any coin for quick access to its price and stats.',
+      '- Có, chọn tùy chọn "Giao hàng" khi đặt món, nhập địa chỉ và xác nhận. Thời gian giao sẽ được thông báo trong app.',
   },
 ];
 
@@ -85,9 +84,9 @@ const FaqV2 = ({ data, style }: FaqV2Props) => {
       <div className="flex flex-col w-full max-w-[960px] px-4 lg:px-0">
         <div className="flex flex-col gap-2 2xl:gap-6 items-center">
           <h2 className="text-base lg:text-[42px] heading-1 text-center flex items-center gap-2 tracking-[-1.4px]">
-            {isMobile ? 'FAQ' : 'Help & FAQs - ChainCap Market'}
+            Lalala Cafe
           </h2>
-          <h4 className="text-base lg:text-[24px]">Need assistance or have questions?</h4>
+          <h4 className="text-base lg:text-[24px]">Cần hỗ trợ hoặc có thắc mắc?</h4>
         </div>
         <div className="w-full">
           <Accordion

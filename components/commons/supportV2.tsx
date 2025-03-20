@@ -4,7 +4,7 @@ import axios from "axios";
 
 const options = [
   {
-    label: "Delete",
+    label: "XÓA",
     value: "delete",
   },
 ];
@@ -48,7 +48,7 @@ const SupportV2Common = () => {
   return (
     <div className="h-[100vh] pt-[160px] w-full flex flex-col items-center ">
       <div className="text-center text-white text-base lg:text-5xl font-semibold font-['Poppins'] capitalize leading-[67.20px] mb-[32px]">
-        Support
+        HỖ TRỢ
       </div>
 
       <div className="max-w-[600px] w-full px-4 lg:px-0 flex flex-col justify-start items-center gap-[24px]">
@@ -79,7 +79,7 @@ const SupportV2Common = () => {
             <div className="w-full flex-col flex gap-3">
               <div className="justify-start items-center gap-2.5 inline-flex">
                 <div className="text-white text-[13px] lg:text-[16px] font-semibold font-['Poppins'] leading-normal">
-                  Username
+                  Tên người dùng
                 </div>
               </div>
               <input
@@ -91,7 +91,7 @@ const SupportV2Common = () => {
             <div className="w-full flex-col flex gap-3">
               <div className="justify-start items-center gap-2.5 inline-flex">
                 <div className="text-white text-[13px] lg:text-[16px] font-semibold font-['Poppins'] leading-normal">
-                  Reason
+                  Lý do
                 </div>
               </div>
               <textarea
@@ -110,7 +110,7 @@ const SupportV2Common = () => {
               onClick={() => onSubmit()}
               className="text-center text-black text-base font-medium font-['Poppins'] leading-relaxed"
             >
-              {form.loading ? <LoadingTailwind /> : "Submit"}
+              {form.loading ? <LoadingTailwind /> : "Gửi yêu cầu"}
             </div>
           </button>
         </div>
