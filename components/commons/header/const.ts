@@ -1,5 +1,5 @@
 export const components = [
-  { title: "HỖ TRỢ", href: "/support" },
-  { title: "GIẢI ĐÁP THẮC MẮC", href: "/faq" },
-  { title: "CHÍNH SÁCH BẢO MẬT", href: "/privacyPolicy" },
+  { title: "Support", href: "/support" },
+  { title: "FAQ", href: "/faq" },
+  { title: "Privacy Policy", href: "/privacyPolicy" },
 ];
